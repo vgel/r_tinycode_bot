@@ -45,5 +45,5 @@ load_esolangs_style("http://esolangs.org/wiki/Language_list", "http://esolangs.o
 f=open(sys.argv[1], 'w')
 j=json.dumps(languages)
 f.write(j)
-print "Wrote %d bytes"%len(j)
+print "Wrote %d bytes (%d languages)"%(len(j),len(languages))
 f.close()
