@@ -40,8 +40,8 @@ def load_esolangs_style(url, baseurl, dict):
 
 
 languages={}
-load_wikipedia_style("http://en.wikipedia.org/wiki/List_of_programming_languages", "http://en.wikipedia.org", languages)
 load_esolangs_style("http://esolangs.org/wiki/Language_list", "http://esolangs.org", languages)
+load_wikipedia_style("http://en.wikipedia.org/wiki/List_of_programming_languages", "http://en.wikipedia.org", languages)
 f=open(sys.argv[1], 'w')
 j=json.dumps(languages)
 f.write(j)
